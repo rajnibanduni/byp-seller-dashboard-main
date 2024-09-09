@@ -29,6 +29,12 @@ function EditSettings() {
           <TabsList>
             <TabsTrigger value="general">General</TabsTrigger>
             <TabsTrigger value="password">Password</TabsTrigger>
+            <TabsTrigger value="termsandconditions">Terms and Conditions</TabsTrigger>
+            <TabsTrigger value="returnpollicy">Return Pollicy</TabsTrigger>
+            <TabsTrigger value="shippingpolicy">Shipping Policy</TabsTrigger>
+
+
+
           </TabsList>
 
           <TabsContent value="general">
@@ -145,6 +151,49 @@ function EditSettings() {
                             </div>
                           </div>
                           {/* Terms and Conditions End */}
+
+                          <div className=" p-4 border border-gray-200 rounded-lg grid gap-5">
+                            <div className="border-b ">
+                              <h2 className="py-4 text-2xl font-semibold leading-none tracking-tight">
+                                  Return Pollicy
+                              </h2>
+                              <p className="text-sm text-muted-foreground mb-3">
+                                Lorem ipsum dolor sit amet consectetur,
+                                adipisicing elit. Cum sed tenetur ipsam
+                                veritatis at
+                              </p>
+                            </div>
+
+                            <div className="grid gap-2">
+                              <label className="text-sm font-medium leading-none peer-disabled:cursor-not-allowed peer-disabled:opacity-70">
+                              Return Pollicy Details *
+                              </label>
+                              <Textarea placeholder="Type your message here." />
+                            </div>
+                          </div>
+                          {/* Return Pollicy End */}
+                          
+                          <div className=" p-4 border border-gray-200 rounded-lg grid gap-5">
+                            <div className="border-b ">
+                              <h2 className="py-4 text-2xl font-semibold leading-none tracking-tight">
+                              Shipping Policy
+                              </h2>
+                              <p className="text-sm text-muted-foreground mb-3">
+                                Lorem ipsum dolor sit amet consectetur,
+                                adipisicing elit. Cum sed tenetur ipsam
+                                veritatis at
+                              </p>
+                            </div>
+
+                            <div className="grid gap-2">
+                              <label className="text-sm font-medium leading-none peer-disabled:cursor-not-allowed peer-disabled:opacity-70">
+                              Shipping Pollicy Details *
+                              </label>
+                              <Textarea placeholder="Type your message here." />
+                            </div>
+                          </div>
+                          {/* Shipping policy Edn */}
+
                           <div className=" p-4 border border-gray-200 rounded-lg grid gap-5">
                             <div className="border-b ">
                               <h2 className="py-4 text-2xl font-semibold leading-none tracking-tight">
@@ -261,55 +310,219 @@ function EditSettings() {
                 </CardFooter>
               </Card>
 
-              {/* <Card x-chunk="dashboard-04-chunk-1">
-                <CardHeader>
-                  <CardTitle>Store Name</CardTitle>
-                  <CardDescription>
-                    Used to identify your store in the marketplace.
-                  </CardDescription>
-                </CardHeader>
-                <CardContent>
-                  <form>
-                    <Input placeholder="Store Name" />
-                  </form>
-                </CardContent>
-                <CardFooter className="border-t px-6 py-4">
-                  <Button>Save</Button>
-                </CardFooter>
-              </Card>
-              <Card x-chunk="dashboard-04-chunk-2">
-                <CardHeader>
-                  <CardTitle>Plugins Directory</CardTitle>
-                  <CardDescription>
-                    The directory within your project, in which your plugins are
-                    located.
-                  </CardDescription>
-                </CardHeader>
-                <CardContent>
-                  <form className="flex flex-col gap-4">
-                    <Input
-                      className="focus-visible:!ring-1 focus-visible:ring-[#E11D47] focus-visible:!ring-offset-1"
-                      placeholder="Store Name"
-                      defaultValue=""
-                    />
-                    <div className="flex items-center space-x-2">
-                      <Checkbox id="include" defaultChecked />
-                      <label
-                        htmlFor="include"
-                        className="text-sm font-medium leading-none peer-disabled:cursor-not-allowed peer-disabled:opacity-70"
-                      >
-                        Allow administrators to change the directory.
-                      </label>
-                    </div>
-                  </form>
-                </CardContent>
-                <CardFooter className="border-t px-6 py-4">
-                  <Button>Save</Button>
-                </CardFooter>
-              </Card> */}
+              
             </div>
           </TabsContent>
-          <TabsContent value="password">Change your password here.</TabsContent>
+          <TabsContent value="password">
+          <div className="geid gap-5">
+              <Card x-chunk="dashboard-04-chunk-1">
+                <CardHeader>
+                  <CardTitle>
+                    <div className="flex flex-row gap-2 items-center">
+                      Reset Password
+                      
+                    </div>
+                  </CardTitle>
+                  <CardDescription>
+                    Lorem ipsum, dolor sit amet consectetur adipisicing elit.
+                    Exercitationem dignissimos nesciunt deleniti ut fugit
+                    inventore officiis nemo porro repudiandae qui quis at omnis,
+                    ad sequi sapiente? Est accusamus asperiores iste.
+                  </CardDescription>
+                </CardHeader>
+
+                <CardContent>
+                  <div className="grid gap-10">
+                    <div className="flex flex-col">
+                      <div className="w-full p-6 bg-white rounded-lg shadow dark:border md:mt-0  dark:bg-gray-800 dark:border-gray-700 sm:p-8">
+                        <h2 className="mb-1 text-xl font-bold leading-tight tracking-tight text-gray-900 md:text-2xl dark:text-white">
+                          Change Password
+                        </h2>
+                        <form className="mt-4 space-y-4 lg:mt-5 md:space-y-5">
+                          <div>
+                            <label
+                              htmlFor="email"
+                              className="block mb-2 text-sm font-medium text-gray-900 dark:text-white"
+                            >
+                              Your email
+                            </label>
+                            <input
+                              type="email"
+                              name="email"
+                              id="email"
+                              className="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-primary-600 focus:border-primary-600 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500"
+                              placeholder="name@company.com"
+                            />
+                          </div>
+                          <div>
+                            <label
+                              htmlFor="password"
+                              className="block mb-2 text-sm font-medium text-gray-900 dark:text-white"
+                            >
+                              New Password
+                            </label>
+                            <input
+                              type="password"
+                              name="password"
+                              id="password"
+                              placeholder="••••••••"
+                              className="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-primary-600 focus:border-primary-600 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500"
+                            />
+                          </div>
+                          <div>
+                            <label
+                              htmlFor="confirm-password"
+                              className="block mb-2 text-sm font-medium text-gray-900 dark:text-white"
+                            >
+                              Confirm password
+                            </label>
+                            <input
+                              type="confirm-password"
+                              name="confirm-password"
+                              id="confirm-password"
+                              placeholder="••••••••"
+                              className="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-primary-600 focus:border-primary-600 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500"
+                            />
+                          </div>
+                          <div className="flex items-start">
+                            <div className="flex items-center h-5">
+                              <input
+                                id="newsletter"
+                                aria-describedby="newsletter"
+                                type="checkbox"
+                                className="w-4 h-4 border border-gray-300 rounded bg-gray-50 focus:ring-3 focus:ring-primary-300 dark:bg-gray-700 dark:border-gray-600 dark:focus:ring-primary-600 dark:ring-offset-gray-800"
+                              />
+                            </div>
+                            <div className="ml-3 text-sm">
+                              <label
+                                htmlFor="newsletter"
+                                className="font-light text-gray-500 dark:text-gray-300"
+                              >
+                                I accept the{" "}
+                                <a
+                                  className="font-medium text-primary-600 hover:underline dark:text-primary-500"
+                                  href="#"
+                                >
+                                  Terms and Conditions
+                                </a>
+                              </label>
+                            </div>
+                          </div>
+                          <button
+                            type="submit"
+                            className=" text-white  bg-[#E11D47] hover:bg-[#E53B5B] focus:ring-4 focus:outline-none focus:ring-primary-300 font-medium rounded-lg text-sm px-5 py-2.5 text-center dark:bg-primary-600 dark:hover:bg-primary-700 dark:focus:ring-primary-800"
+                          >
+                            Reset passwod
+                          </button>
+                        </form>
+                      </div>
+                    </div>
+                  </div>
+                </CardContent>
+              </Card>
+            </div>
+          </TabsContent>
+
+          <TabsContent value="termsandconditions">
+            <Card>
+              <CardHeader>
+              <CardTitle> Terms and Conditions</CardTitle>
+                <CardDescription>
+                  Lorem, ipsum dolor sit amet consectetur adipisicing elit.
+                </CardDescription>
+              </CardHeader>
+              <CardContent>
+              <div className=" p-4 border border-gray-200 rounded-lg grid gap-5">
+                 <div className="grid gap-2">
+                              <label className="text-sm font-medium leading-none peer-disabled:cursor-not-allowed peer-disabled:opacity-70">
+                                TOC Details *
+                              </label>
+                              <Textarea placeholder="Type your message here." />
+                            </div>
+                          </div>
+              </CardContent>
+
+              <CardFooter className="border-t px-6 py-4 flex flex-row gap-5 justify-end">
+                  <Button type="submit"> Save </Button>
+                  <Button
+                    type="submit"
+                    className=" bg-white border border-gray-500 text-gray-800 hover:bg-white"
+                  >
+                    Cancel
+                  </Button>
+                </CardFooter>
+            </Card>
+          {/* <Form {...form}>
+                    <form> */}
+          </TabsContent>
+
+          <TabsContent value="returnpollicy">
+            <Card>
+              <CardHeader>
+              <CardTitle> Return Pollicy</CardTitle>
+                <CardDescription>
+                  Lorem, ipsum dolor sit amet consectetur adipisicing elit.
+                </CardDescription>
+              </CardHeader>
+              <CardContent>
+              <div className=" p-4 border border-gray-200 rounded-lg grid gap-5">
+                 <div className="grid gap-2">
+                              <label className="text-sm font-medium leading-none peer-disabled:cursor-not-allowed peer-disabled:opacity-70">
+                                Return Pollicy Details *
+                              </label>
+                              <Textarea placeholder="Type your message here." />
+                            </div>
+                          </div>
+              </CardContent>
+
+              <CardFooter className="border-t px-6 py-4 flex flex-row gap-5 justify-end">
+                  <Button type="submit"> Save </Button>
+                  <Button
+                    type="submit"
+                    className=" bg-white border border-gray-500 text-gray-800 hover:bg-white"
+                  >
+                    Cancel
+                  </Button>
+                </CardFooter>
+            </Card>
+          {/* <Form {...form}>
+                    <form> */}
+          </TabsContent>
+
+          <TabsContent value="shippingpolicy">
+            <Card>
+              <CardHeader>
+              <CardTitle> Shipping Policy</CardTitle>
+                <CardDescription>
+                  Lorem, ipsum dolor sit amet consectetur adipisicing elit.
+                </CardDescription>
+              </CardHeader>
+              <CardContent>
+              <div className=" p-4 border border-gray-200 rounded-lg grid gap-5">
+                 <div className="grid gap-2">
+                              <label className="text-sm font-medium leading-none peer-disabled:cursor-not-allowed peer-disabled:opacity-70">
+                                Shipping Policy Details *
+                              </label>
+                              <Textarea placeholder="Type your message here." />
+                            </div>
+                          </div>
+              </CardContent>
+
+              <CardFooter className="border-t px-6 py-4 flex flex-row gap-5 justify-end">
+                  <Button type="submit"> Save </Button>
+                  <Button
+                    type="submit"
+                    className=" bg-white border border-gray-500 text-gray-800 hover:bg-white"
+                  >
+                    Cancel
+                  </Button>
+                </CardFooter>
+            </Card>
+          {/* <Form {...form}>
+                    <form> */}
+          </TabsContent>
+
+
         </Tabs>
       </div>
     </main>
