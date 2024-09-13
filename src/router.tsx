@@ -13,6 +13,7 @@ import AnalyticsPage from "@/pages/dashboard/Analytics";
 import OnboardLayout from "./layouts/OnboardLayout";
 import AddProducts from "./pages/dashboard/AddProducts";
 import EditSettings from "./pages/dashboard/settings/EditSettings";
+import MessagesPage from "./pages/dashboard/Messages";
 
 const router = createBrowserRouter([
   {
@@ -46,6 +47,10 @@ const router = createBrowserRouter([
       {
         path: "analytics",
         element: <AnalyticsPage />,
+      },
+      {
+        path: "inbox",
+        element: <MessagesPage />,
       },
       {
         path: "settings",
